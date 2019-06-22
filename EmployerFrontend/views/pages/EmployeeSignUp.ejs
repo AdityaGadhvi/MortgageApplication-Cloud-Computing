@@ -18,10 +18,10 @@ body,html{
       font-size: 18px;
     }
   </style>
-  
+
 
 <div class="container-fluid" id="mainDiv">
-    <form action="http://localhost:1338/Create">
+    <form action="http://localhost:1338/Create" method="POST">
       <div class="col-lg-4">
         
       </div>
@@ -32,22 +32,22 @@ body,html{
       <div class="form-group">
         <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+        <input type="text" class="form-control" name="name" placeholder="Enter your Full Name">
       </div>
         <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <input type="email" class="form-control" name="email" placeholder="Enter email">
       </div>
       <div class="form-group">
         <label for="password">Password:</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter Password">
+        <input type="password" class="form-control" name="password" placeholder="Enter Password">
       </div>
       <div class="form-group">
         <label for="salary">Salary:</label>
-        <input type="number" class="form-control" id="salary" placeholder="Enter your salary">
+        <input type="number" class="form-control" name="salary" placeholder="Enter your salary">
       </div>
       <div class="form-group">
         <label for="tenure">Work tenure:</label>
-        <input type="number" class="form-control" id="tenure" placeholder="Enter your work tenure">
+        <input type="number" class="form-control" name="tenure" placeholder="Enter your work tenure">
       </div>
      <center><button type="submit" class="btn btn-primary" id="btn">Sign Up</button></center>
     </form>
