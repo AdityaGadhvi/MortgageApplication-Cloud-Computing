@@ -18,39 +18,45 @@
       #btn{
         font-size: 18px;
       }
-      
+
     </style>
-    
+
     <div class="container-fluid" id="mainDiv">
      <div class="col-lg-4">
-        
+
     </div>
-    <form>
+    <form action="http://localhost:1338/employer/supplyMBRinfo" method="POST">
       <div class="col-lg-4" id="subDiv">
        <div>
+          <%empID%>
          <center><h1>Information Supply Form</h1></center>
-       </div> 
+       </div>
+       <div class="form-group">
+          <label for="empID">Employee ID:</label>
+          <input type="text" class="form-control" id="empID" required=true value="<%=empID%>"
+           name="empID" readonly>
+
+        </div>
       <div class="form-group">
         <label for="appNumber">Mortgage Application Number:</label>
-        <input type="number" class="form-control" id="appNumber" placeholder="Enter your Mortgage Application Number">
+        <input type="number" class="form-control" required=true id="appNumber" placeholder="Enter your Mortgage Application Number">
       </div>
       <div class="form-group">
         <label for="address">Broker Web-service Address:</label>
-        <input type="text" class="form-control" id="address" placeholder="Enter Broker's web-service address">
+        <input type="text" class="form-control" id="address" required=true placeholder="Enter Broker's web-service address">
       </div>
       <div class="form-group">
-      
+
         <input type="checkbox"  id="agree">&nbsp;<b>Do you agree to supply Information?</b>
-      
+
       </div>
-      
-     <center><button type="submit" onclick="window.location.href='#'" class="btn btn-primary" id="btn">Submit</button></center>
+
+     <center><button type="submit" class="btn btn-primary" id="btn">Submit</button></center>
     </div>
     </form>
     <div class="col-lg-4">
-        
+
     </div>
     </div>
 
-    
-    
+
