@@ -5,9 +5,9 @@ $(document).ready(function(){
     if(this.checked) {
         alert("User agreed");
     }
-    else{
+    else if(!this.checked){
       alert("Please agree by checking the checkbox");
-      event.preventDefault();
+      return false;
     }
 });
  
