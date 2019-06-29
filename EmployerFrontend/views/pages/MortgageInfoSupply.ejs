@@ -1,10 +1,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $("form").submit(function() {
-  alert("hello");
-  $(".checkbox").change(function() {
+  $("#agree").change(function() {
     if(this.checked) {
-        //Do stuff
+        alert("User agreed");
     }
     else{
       alert("Please agree by checking the checkbox");
@@ -66,7 +65,7 @@ $(document).ready(function(){
       </div>
       <div class="form-group">
 
-        <input type="checkbox" class="checkbox"  id="agree">&nbsp;<b>Do you agree to supply Information?</b>
+        <input type="checkbox" id="agree">&nbsp;<b>Do you agree to supply Information?</b>
 
       </div>
 
