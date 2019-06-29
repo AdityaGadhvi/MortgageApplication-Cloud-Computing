@@ -1,4 +1,21 @@
+<script type="text/javascript">
+$(document).ready(function(){
+  $("form").submit(function() {
+  alert("hello");
+  $(".checkbox").change(function() {
+    if(this.checked) {
+        //Do stuff
+    }
+    else{
+      alert("Please agree by checking the checkbox");
+      event.preventDefault();
+    }
+});
+ 
 
+});
+});
+</script>
 <style type="text/css">
     body,html{
       height: 100%;
@@ -47,7 +64,7 @@
       </div>
       <div class="form-group">
 
-        <input type="checkbox"  id="agree">&nbsp;<b>Do you agree to supply Information?</b>
+        <input type="checkbox" class="checkbox"  id="agree">&nbsp;<b>Do you agree to supply Information?</b>
 
       </div>
 
@@ -60,3 +77,4 @@
     </div>
 
 
+  
